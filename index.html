@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ndex.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" class="reg-form">
+        <h3>Registration form</h3>
+        <div id="input-name">
+          <input type="text" id="name" placeholder="Name" required />
+          <div id="err" class="error">error</div>
+        </div>
+        <div id="input-number">
+          <input type="number" id="number" placeholder="Reg No" required />
+          <div id="err" class="error">error</div>
+        </div>
+        <div id="input-password">
+          <input type="password" id="password" placeholder="Password" required/>
+          <div id="err" class="error">error</div>
+        </div>
+        <div id="input-course">
+          <select name="" id="course" required>
+            <option value="Course" selected hidden>Course</option>
+            <option value="MCA">MCA</option>
+            <option value="BCA">BCA</option>
+            <option value="HSLC">HSLC</option>
+          </select>
+          <div id="err" class="error">error</div>
+        </div>
+        <div id="input-gender">
+          <div class="gender">
+            <label for="gender">Male </label
+            ><input type="radio" value="Male" name="gender" />
+          </div>
+          <div class="gender">
+            <label for="gender">Female </label
+            ><input type="radio" value="Female" name="gender" />
+          </div>
+          <div id="err" class="error">error</div>
+        </div>
+        <div>
+          <button onclick="validate()">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
