@@ -80,5 +80,24 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 4px grey;
-  
+  position: relative;
+  transition: 400ms ease-in;
+}
+
+button:hover::after {
+  content: ">>";
+  padding-left: 1rem;
+  position: absolute;
+  transition: position 500ms ease-in;
+
+}
+
+h3
+{
+    font-size: 2rem;
+    font-weight: 100;
+    font-variant: normal;
+    color: chocolate;
+    text-rendering: optimizeLegibility;
+   
 }
